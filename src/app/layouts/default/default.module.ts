@@ -6,6 +6,10 @@ import { PostsComponent } from '../../modules/posts/posts.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from '../../shared/shared.module';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
@@ -13,11 +17,15 @@ import { SharedModule } from '../../shared/shared.module';
     HomeComponent,
     PostsComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    FlexLayoutModule,
-    SharedModule
-  ]
+    imports: [
+        CommonModule,
+        RouterModule,
+        FlexLayoutModule,
+        SharedModule,
+        MatDatepickerModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonToggleModule
+    ]
 })
 export class DefaultModule { }
