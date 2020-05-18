@@ -6,10 +6,8 @@ import { PostsComponent } from '../../modules/posts/posts.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from '../../shared/shared.module';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MaterialUiModule} from '../../material-ui.module';
 
 @NgModule({
   declarations: [
@@ -22,10 +20,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
         RouterModule,
         FlexLayoutModule,
         SharedModule,
-        MatDatepickerModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatButtonToggleModule
+        MatButtonToggleModule,
+        MaterialUiModule
     ]
 })
 export class DefaultModule { }

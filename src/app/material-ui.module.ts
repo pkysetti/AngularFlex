@@ -11,6 +11,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatNativeDateModule} from '@angular/material/core';
+import {MAT_ACCORDION, MatAccordion, MatExpansionModule, MatExpansionPanel} from '@angular/material/expansion';
+import {MatAccordionHarness} from '@angular/material/expansion/testing';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatRadioButton, MatRadioModule} from '@angular/material/radio';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -31,8 +36,11 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatDatepickerModule,
     MatListModule,
     MatFormFieldModule,
-    MatNativeDateModule
-
+    MatNativeDateModule,
+    MatExpansionModule,
+    MatSidenavModule,
+    MatRadioModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [],
@@ -48,6 +56,11 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatDatepickerModule,
     MatListModule,
     MatFormFieldModule,
-    MatNativeDateModule]
+    MatNativeDateModule,
+    MatExpansionModule,
+    MatSidenavModule,
+    MatRadioModule,
+    MatGridListModule
+    ]
 })
 export class MaterialUiModule { }

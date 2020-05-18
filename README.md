@@ -28,3 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## References 
 https://auth0.com/blog/creating-beautiful-apps-with-angular-material/ 
+
+https://stackoverflow.com/questions/46360604/opening-angular-material-expansion-panel-vertically 

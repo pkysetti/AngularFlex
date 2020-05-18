@@ -1,3 +1,4 @@
+/*
 :host {
   display: flex;
   flex-direction: column;
@@ -7,3 +8,33 @@
 .content {
   padding: 20px;
 }
+*/
+.flex-parent {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  height: 100%;
+}
+header {
+  flex: 0 1 50px;
+  background: tomato;
+}
+
+main  {
+  flex: 1 1 auto;
+  background: gold;
+  overflow: auto;
+}
+footer {
+  flex: 0 1 50px;
+  background: lightgreen;
+  /* fixes the footer: min-height: 60px; */
+}
+
+

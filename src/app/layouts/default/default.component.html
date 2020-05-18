@@ -1,13 +1,66 @@
-<app-header flexLayout="column"></app-header>
-<div flexLayout="row" fxFlex>
+
+
+
+
+
+<!--  <div flexLayout="row" fxFlex>
     <div fxFlex="20">
-        <app-sidebar fxFlex></app-sidebar>
+      <app-sidebar fxFlex></app-sidebar>
     </div>
     <div fxFlex="60" class="content">
-        <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
     </div>
-  <div fxFlex="20">
-    <app-sidebar fxFlex></app-sidebar>
-  </div>
-</div>
-<app-footer flexLayout="column"></app-footer>
+    <div fxFlex="20">
+      <app-sidebar fxFlex></app-sidebar>
+    </div>
+  </div>-->
+
+  <mat-sidenav-container class="main" style="height: 100%"  >
+
+    <mat-toolbar color="primary" class="example-toolbar header" style="height: 5%"  >
+      <div fxFlex="20">
+        <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+
+      </div>
+      <div fxFlex="60">
+        <h1 class="example-app-name">Responsive App</h1>
+      </div>
+      <div fxFlex="20">
+        <a routerLink="/">Home      </a>
+        <a routerLink="/posts">Posts      </a>
+        <a routerLink="/login">Login      </a>
+      </div>
+
+
+    </mat-toolbar>
+    <mat-sidenav #snav [mode]="'Over'"
+                fixedTopGap="56">
+      <mat-nav-list style="width:450px">
+        <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+        <a>Test </a>
+        <a>Test </a>
+        <a>Test </a>
+
+      </mat-nav-list>
+    </mat-sidenav>
+
+
+    <div class="flex-parent" style="height: 95%" flexLayout="row" fxFlex>
+      <div fxFlex="20">
+        <app-sidebar fxFlex></app-sidebar>
+      </div>
+      <div fxFlex="60">
+        <router-outlet></router-outlet>
+      </div>
+      <div fxFlex="20">
+        <app-sidebar fxFlex></app-sidebar>
+      </div>
+    </div>
+
+   <!-- <app-footer  style="height: 5%"></app-footer>-->
+  </mat-sidenav-container>
+
+
+
+
+
